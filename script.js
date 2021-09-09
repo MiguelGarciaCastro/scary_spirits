@@ -1,5 +1,16 @@
 var baseUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
-var SearchInput = document.
+var searchInput = document.getElementById('input_text')
+var searchBtn = document.addElementById('search-button')
+var displayDiv = document.getElementById('simple')
+
+searchBtn.addEventListener('click', function(event){
+    event.preventDefault()
+    
+})
+
+
+
+
 window.addEventListener('click', function(){
     fetch(baseUrl + "screwdriver")
     .then(function(response){
@@ -22,3 +33,10 @@ window.addEventListener('click', function(){
     })
 
 })
+
+function(){
+    for (let I = 0; I < array.length; I++) {
+    
+        
+    }
+}
