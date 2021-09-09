@@ -15,8 +15,12 @@ body {
 .input-field {
     font-family: 'Cinzel', serif;
     color: cornsilk !important;
+    padding: 80px;
 }
 .inputText {
     
     color: cornsilk !important;
+}
+.addp {
+    padding: 3rem;
 }
