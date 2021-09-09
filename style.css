@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: cornsilk;
+}
+body {
+    background-color: rgb(54, 52, 52);
+    /* background-image: url("https://cdn.nerdschalk.com/wp-content/uploads/2020/10/zoom-halloween-backgrounds-1-scaled.jpg;"); */
+    opacity: .5;
+}
+.light {
+    color:cornsilk
+    font-family: 'Cinzel', serif;
+}
+.input-field {
+    font-family: 'Cinzel', serif;
+    color: cornsilk !important;
+    padding: 80px;
+}
+.inputText {
+    
+    color: cornsilk !important;
+}
+.addp {
+    padding: 3rem;
+}
