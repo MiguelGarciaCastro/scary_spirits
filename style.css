@@ -9,12 +9,13 @@ body {
     opacity: .5;
 }
 .light {
-    color:cornsilk
+    color:cornsilk;
     font-family: 'Cinzel', serif;
 }
 .input-field {
     font-family: 'Cinzel', serif;
-    color: cornsilk !important;
+    color: cornsilk;
+    opacity: .5;
     padding: 80px;
 }
 .inputText {
@@ -23,4 +24,8 @@ body {
 }
 .addp {
     padding: 3rem;
+}
+#search {
+    font-family: 'Cinzel', serif;
+    color: cornsilk; 
 }

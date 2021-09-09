@@ -35,3 +35,8 @@ searchBtn.addEventListener('click', function(event){
         
 //     }
 // }
+$( document ).ready(function(){
+    $(".dropdown-trigger").dropdown({
+        hover: true
+    });
+})
