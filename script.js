@@ -73,3 +73,7 @@ $( document ).ready(function(){
         hover: true
     });
 })
+$(function () {
+	$('h1').textillate();
+    // $("h1").textillate("out")
+})

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <title>Spirit Specialist</title>
 </head>
 <body>
-    <ul id="dropdown1" class="dropdown-content">
+    <ul id="dropdown1" class="dropdown-content top">
         <!-- <li><a href="#!">one</a></li>
         <li><a href="#!">two</a></li>
         <li class="divider"></li>
@@ -26,7 +26,7 @@
       </ul>
     <nav class="#d84315 deep-orange darken-3">
         <ul>
-            <li><a class="btn-floating pulse dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
+            <li><a class="btn-floating pulse dropdown-trigger top" href="#!" data-target="dropdown1"><i class="material-icons top">menu</i></a></li>
             <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
             <!-- <li><a href="#!">Cocktails</a></li>
             <li><a href="#!">Ingredients</a></li>
@@ -34,7 +34,7 @@
             <li><a href="#!">Glasses</a></li> -->
           </ul>
     </nav>
-    <h1 class="animate__hinge">Spirit Specialist</h1>
+    <h1 data-in-effect="fadeInDownBig" data-in-shuffle="true" data-out-effect="hinge" data-out-shuffle="true" class="animate__animated animate__bounce">Spirit Specialist</h1>
 
     <div class="row light">
         <div class="nav-wrapper">
@@ -48,7 +48,7 @@
           </div>
     </div>    
     <h2>
-      <ul> 
+      <ul class="instruct"> 
         <li>Step 1) Search a cocktail</li>
         <li>Step 2) Listen to your feedback</li>
         <li>Step 3) Recreate your new profound knowledge</li>
@@ -117,9 +117,11 @@
       <p>Authors: Miguel G., Mikaila W., Josh P.<br>
       <a href="mailto:connoisseurs@group.genius.com">connoisseurs@group.genius.com </a></p>
     </footer>
+    
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js" integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="voicerss-tts.min.js"></script>
