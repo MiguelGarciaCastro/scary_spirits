@@ -5,8 +5,9 @@ h1 {
 }
 body {
     background-color: rgb(54, 52, 52);
-    /* background-image: url("https://cdn.nerdschalk.com/wp-content/uploads/2020/10/zoom-halloween-backgrounds-1-scaled.jpg;"); */
-    opacity: .5;
+    /* background-image: url("https://kfoxtv.com/resources/media/7f5ca573-9056-41cc-a69a-e6fe9202c72d-large16x9_ThinkstockPhotos156285718.jpg?1577751212257"); */
+    background-image: url("https://p1.pxfuel.com/preview/1016/743/816/new-year-party-glass-new-year-s-eve-background-champagne.jpg");
+    opacity: .7;
 }
 .light {
     color:cornsilk;
@@ -28,4 +29,7 @@ body {
 #search {
     font-family: 'Cinzel', serif;
     color: cornsilk; 
+}
+.card {
+    opacity: 1;
 }
