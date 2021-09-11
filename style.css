@@ -7,7 +7,7 @@ body {
     background-color: rgb(54, 52, 52);
     /* background-image: url("https://kfoxtv.com/resources/media/7f5ca573-9056-41cc-a69a-e6fe9202c72d-large16x9_ThinkstockPhotos156285718.jpg?1577751212257"); */
     background-image: url("https://cdn.pixabay.com/photo/2019/02/26/05/44/fireworks-4021214_1280.jpg");
-    opacity: .7;
+    /* opacity: .7; */
 }
 .light {
     color:cornsilk;
@@ -16,7 +16,7 @@ body {
 .input-field {
     font-family: 'Cinzel', serif;
     color: cornsilk;
-    opacity: .5;
+    /* opacity: .5; */
     padding: 80px;
 }
 .inputText {
@@ -38,4 +38,9 @@ footer {
     padding: 3px;
     background-color: DarkSalmon;
     color: white;
+  }
+  ul {
+      color: cornsilk;
+      text-align: center;
+      opacity: .9;
   }
