@@ -41,12 +41,24 @@
             <form>
               <div class="input-field col s4 addp">
                 <input id="search" type="search" required>
-                <label class="label-icon" for="search">search   </label>
-                <button id="search-button" class="btn">Go!</button>
+                <label class="label-icon" for="search">search</label>
+                <button id="search-button" class="btn button">Go!</button>
+                <button onclick="document.getElementById('search').value = ''" class="btn button" id="clear">Clear</button>
               </div>
             </form>
           </div>
     </div>    
+
+  <div id="modal1" class="modal">
+    <div class="modal-content modal-close">
+      <h4>ERROR 404</h4>
+      <p>DRINK NOT FOUND!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
     <h2>
       <ul class="instruct"> 
         <li>Step 1) Search a cocktail</li>
