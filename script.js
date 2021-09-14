@@ -9,6 +9,8 @@ clearBtn.addEventListener('click', function(event){
 })
 
 
+
+
 searchBtn.addEventListener('click', function(event){
     event.preventDefault()
     var searchTerm = searchInput.value
@@ -93,3 +95,6 @@ $(function () {
   $(document).ready(function(){
     $('.modal').modal();
   });
+
+  testtt
+  
