@@ -68,3 +68,8 @@ displayDiv.addEventListener('click', function(event){
 //if play instructions are presetnt play button clicked 
 //get text to speech from data attribute on the html button
 //send text to speech request (play instructions)
+$( document ).ready(function(){
+    $(".dropdown-trigger").dropdown({
+        hover: true
+    });
+})
