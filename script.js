@@ -3,11 +3,30 @@ var searchInput = document.getElementById('search')
 var searchBtn = document.getElementById('search-button')
 var displayDiv = document.getElementById('simple')
 
+// saveLast();
+
+function saveLast(newSearch) {
+    // localStorage.setItem(,);
+    var pastDrinks = JSON.parse(localStorage.getItem('search')||[]);
+    console.log(pastDrinks)
+
+    pastDrinks.push(newSearch)
+    localStorage.setItem("search", JSON.stringify(pastDrinks));
+    
+}
+
 
 searchBtn.addEventListener('click', function(event){
     event.preventDefault()
+    function getDrinkFromSearch(searchTerm){
+        
+    }
     var searchTerm = searchInput.value
-    fetch(baseUrl + searchTerm) //drink name needszz needs to be made
+    if (searchTerm !== "") {
+        saveLast(searchTerm)
+        
+    }
+    fetch(baseUrl + searchTerm) //drink name needs to be made
     .then(function(response){
         return response.json()
     })
@@ -16,6 +35,7 @@ searchBtn.addEventListener('click', function(event){
             alert("drink not found")
             return
         }
+
        displayDiv.innerHTML= ""
         for (let i = 0; i < data.drinks.length; i++) {
         
@@ -68,4 +88,5 @@ searchBtn.addEventListener('click', function(event){
             });
     }
 })
+
 
