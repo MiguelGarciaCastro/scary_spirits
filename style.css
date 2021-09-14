@@ -16,7 +16,7 @@ body {
 .input-field {
     font-family: 'Cinzel', serif;
     color: cornsilk;
-    /* opacity: .5; */
+    opacity: .5;
     padding: 80px;
 }
 .inputText {
@@ -39,8 +39,13 @@ footer {
     background-color: DarkSalmon;
     color: white;
   }
-  ul {
+  .instruct {
       color: cornsilk;
       text-align: center;
       opacity: .9;
+      font-family: 'Cinzel', serif;
+  }
+  .top {
+    font-family: 'Cinzel', serif;
+      padding: 0 10px 0 10px;
   }

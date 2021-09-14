@@ -3,6 +3,13 @@ var searchInput = document.getElementById('search')
 var searchBtn = document.getElementById('search-button')
 var displayDiv = document.getElementById('simple')
 
+var clearBtn = document.getElementById('clear')
+clearBtn.addEventListener('click', function(event){
+    location.reload()
+})
+
+
+
 
 searchBtn.addEventListener('click', function(event){
     event.preventDefault()
@@ -73,3 +80,21 @@ $( document ).ready(function(){
         hover: true
     });
 })
+$(function () {
+	$('h1').textillate();
+    // $("h1").textillate("out")
+})
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.modal');
+//     var instances = M.Modal.init(elems, options);
+//   });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  testtt
+  
