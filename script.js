@@ -14,6 +14,12 @@ function saveLast(newSearch) {
     localStorage.setItem("search", JSON.stringify(pastDrinks));
     
 }
+var clearBtn = document.getElementById('clear')
+clearBtn.addEventListener('click', function(event){
+    location.reload()
+})
+
+
 
 
 searchBtn.addEventListener('click', function(event){
@@ -92,3 +98,26 @@ searchBtn.addEventListener('click', function(event){
 })
 
 
+//if play instructions are presetnt play button clicked 
+//get text to speech from data attribute on the html button
+//send text to speech request (play instructions)
+$( document ).ready(function(){
+    $(".dropdown-trigger").dropdown({
+        hover: true
+    });
+})
+$(function () {
+	$('h1').textillate();
+    // $("h1").textillate("out")
+})
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.modal');
+//     var instances = M.Modal.init(elems, options);
+//   });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
