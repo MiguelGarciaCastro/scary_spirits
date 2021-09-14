@@ -19,7 +19,9 @@ function saveLast(newSearch) {
 searchBtn.addEventListener('click', function(event){
     event.preventDefault()
     function getDrinkFromSearch(searchTerm){
-        
+        if (searchTerm) {
+            
+        }
     }
     var searchTerm = searchInput.value
     if (searchTerm !== "") {
