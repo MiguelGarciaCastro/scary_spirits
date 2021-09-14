@@ -2,13 +2,16 @@ var baseUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
 var searchInput = document.getElementById('search')
 var searchBtn = document.getElementById('search-button')
 var displayDiv = document.getElementById('simple')
-
+var pastDrinks = JSON.parse(localStorage.getItem('search'))||[];
 // saveLast();
-
+$('.dropdown-trigger').dropdown();
+console.log(pastDrinks)
+if(pastDrinks.length){
+    pastDrinks.forEach(function(element){
+    document.querySelector('.dropdown-content').innerHTML += `<li>${element}</li>`
+    })}
 function saveLast(newSearch) {
     // localStorage.setItem(,);
-    var pastDrinks = JSON.parse(localStorage.getItem('search')||[]);
-    console.log(pastDrinks)
 
     pastDrinks.push(newSearch)
     localStorage.setItem("search", JSON.stringify(pastDrinks));
@@ -24,11 +27,7 @@ clearBtn.addEventListener('click', function(event){
 
 searchBtn.addEventListener('click', function(event){
     event.preventDefault()
-    function getDrinkFromSearch(searchTerm){
-        if (searchTerm) {
-            
-        }
-    }
+    
     var searchTerm = searchInput.value
     if (searchTerm !== "") {
         saveLast(searchTerm)
@@ -39,9 +38,9 @@ searchBtn.addEventListener('click', function(event){
         return response.json()
     })
     .then(function(data){
-        if (data.drinks===null) {
-            alert("drink not found")
-            return
+        if (!data.drinks) {
+            M.toast({html: 'Drink Not Found!'})
+          return
         }
 
        displayDiv.innerHTML= ""
