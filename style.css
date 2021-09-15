@@ -15,7 +15,7 @@ body {
 }
 .input-field {
     font-family: 'Cinzel', serif;
-    color: cornsilk;
+    color: rgb(255, 239, 220);
     opacity: .5;
     padding: 80px;
 }
@@ -28,7 +28,7 @@ body {
 }
 #search {
     font-family: 'Cinzel', serif;
-    color: cornsilk; 
+    color: red; 
 }
 .card {
     opacity: 1;
